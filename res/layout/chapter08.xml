@@ -3,6 +3,12 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
+    <!-- 
+        親要素(RelativeLayout)に対して、子要素を相対的に配置します。
+        親要素に対して相対的に配置すれば、Viewを重ねることができます。
+        今回はTextViewをRelativeLayoutに対して右寄せにして、
+        layout_margin***を指定することで、ImageViewの上に重ねました。
+     -->
     <ImageView
         android:src="@drawable/barista"
         android:layout_width="wrap_content"
