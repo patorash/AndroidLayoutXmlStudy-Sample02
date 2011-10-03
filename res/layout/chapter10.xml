@@ -4,16 +4,26 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
+    <!-- 
+        dp(dip)は、解像度に合わせてpxが変化する単位です。
+        端末の解像度(dpi)に応じて、大きさが変化します。
+        基本的にdp(dip)を使ってレイアウトを定義していきます。
+        sp(scaled pixels)は主にフォント用の単位です。
+        pxで定義する機会は、ほとんどないと言えますが意識する必要はあります。
+     -->
+    <!-- 普通はtextSizeにはdpは使いませんが、サンプルとして使ってます -->
     <TextView
         android:text="@string/chapter10_dp"
         android:textSize="16dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <!-- 普通はtextSizeにはspを使うのでこっちのが正解 -->
     <TextView
         android:text="@string/chapter10_sp"
         android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <!-- 敢えてpxで指定してみた例。160dpi端末と240dpi端末で比較するといいです -->
     <TextView
         android:text="@string/chapter10_px"
         android:textSize="16px"
