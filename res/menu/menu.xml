@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="@string/menu_chapter07"
+        android:id="@+id/menu_chapter07" />
+    <item
+        android:title="@string/menu_chapter08"
+        android:id="@+id/menu_chapter08" />
+    <item
+        android:title="@string/menu_chapter09"
+        android:id="@+id/menu_chapter09" />
+    <item
+        android:title="@string/menu_chapter10"
+        android:id="@+id/menu_chapter10" />
+</menu>

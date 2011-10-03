@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sample02</string>
+    <string name="title_chapter07">chapter07(画像の中央表示)</string>
+    <string name="title_chapter08">chapter08(Viewを重ねる)</string>
+    <string name="title_chapter09">chapter09(margin, padding)</string>
+    <string name="title_chapter10">chapter10(単位についてdp,sp,px)</string>
+    <string name="menu_chapter07">chapter07</string>
+    <string name="menu_chapter08">chapter08</string>
+    <string name="menu_chapter09">chapter09</string>
+    <string name="menu_chapter10">chapter10</string>
+    <string name="chapter09_margin">marginのみ</string>
+    <string name="chapter09_padding">paddingのみ</string>
+    <string name="chapter09_margin_padding">margin &amp; padding</string>
+    <string name="chapter10_dp">16dp</string>
+    <string name="chapter10_px">16px</string>
+    <string name="chapter10_sp">16sp</string>
+    <string name="chapter10_description">
+Androidのレイアウトでは、dp(dip)を使うのが主流です。\n
+dpは、端末の解像度に依存しない単位で、端末の解像度に合わせて自動的に適当なpxサイズに変換されます。\n
+HVGA(480x320)の端末だと、50dp=50px。\n
+WVGA(800x480)の端末だと、50dp=75px。\n
+フォントの大きさに関しては、sp(scaled pixels)を使います。ユーザのシステム上のフォントサイズ指定によってサイズが変わります。
+しかしシステム上のフォントサイズを変更するところってどこにあるのやら…。
+    </string>
+</resources>

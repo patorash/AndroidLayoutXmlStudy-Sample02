@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 
+        layout_centerInParent=trueにしているので、
+        画像が領域の中央に配置されます。
+        ImageViewのscaleTypeをfitCenterにすることで、
+        領域に合わせて自動でリサイズされます。
+        scaleTypeは色々あるので、時間があれば他の値も試してみましょう。
+        また、解像度の大きい画像を使うとメモリを消費しやすくてアプリが
+        強制終了しやすくなります。
+        なるべく画面の解像度に近いサイズにしましょう。
+     -->
+    <ImageView 
+        android:src="@drawable/barista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+    />
+</RelativeLayout>
