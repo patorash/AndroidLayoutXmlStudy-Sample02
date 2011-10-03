@@ -4,10 +4,35 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical">
+    <!-- 
+        marginを指定する場合は、layout_marginを使います。
+        個別に設定する場合は、
+        layout_marginTop,
+        layout_marginBottom,
+        layout_marginRight,
+        layout_marginLeft
+        です。
+        
+        paddingを指定する場合は、paddingを使います。
+        個別に設定する場合は、
+        paddingTop,
+        paddingBottom,
+        paddingRight,
+        paddingLeft
+        です。
+        
+        CSSのブロック要素と同じく、コンテンツの周囲がpaddingで
+        paddingの外側がmarginです。
+        marginは、周囲の要素に対して有効なため、
+        Root要素(ここでは2行目で定義しているLinearLayout)でmarginを
+        定義しても有効ではありません。定義はできますが、動作が不確定ぽいです。
+        Root以下の子要素で定義してください。
+     -->
     <TextView
         android:text="@string/chapter09_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <!-- marginのみ設定 -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -27,6 +52,10 @@
             android:layout_marginLeft="20dp"
             android:background="#4b0082" />
     </LinearLayout>
+    <!--
+        paddingのみ設定
+        より大きな数値でpaddingが設定されている要素にベースラインが合ってしまうようです。
+     -->
     <TextView
         android:text="@string/chapter09_padding"
         android:layout_width="wrap_content"
@@ -58,6 +87,7 @@
         android:text="@string/chapter09_margin_padding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+    <!-- marginとpaddingを設定 -->
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
